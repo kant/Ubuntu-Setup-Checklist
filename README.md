@@ -1,4 +1,4 @@
-I always choose english as system language althought I'm from germany because there less switches between english (coding in english, system in german, documentation in english, and so, thats irritating).
+I always choose english as system language althought I'm from germany, because there less switches between english and german (coding in english, system in german, documentation in english, and so, thats irritating).
 
 
 
@@ -32,14 +32,14 @@ to
 
 
 
-# Dotfiles:
+# My dotfiles from github:
     $ git clone https://github.com/itws/dotfiles.git .dotfiles
     $ cd .dotfiles
     $ rake install
 
 
 
-# Change shell
+# Change shell to zsh
     $ sudo usermod -s /usr/bin/zsh benny
 
 If the unit/gnome terminal still starts a dash, go to edit > profiles > edit > title and command and click "Run a custom command instead of my shell" and change "custom command" to "/usr/bin/zsh"
@@ -48,12 +48,14 @@ If the unit/gnome terminal still starts a dash, go to edit > profiles > edit > t
 
 
 # Monaco
-- Get the Monaco TTF
+Monaco is a pretty monospace font, which I really like. It's a native OSX font.
+- Get the Monaco TTF from somewhere
 - Move it to the ~/.fonts dir
 
 
 # General stuff
 - Copy your ssh private keys etc. to the new machine
+- Setup your ICQ, IRC, whatever accounts in empathy
 
 
 # Clean up home directory
