@@ -23,7 +23,7 @@ to
 # Install ubuntu packages
     $ sudo aptitude update
     $ sudo aptitude upgrade
-    $ sudo aptitude install ruby1.9.3 vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ libmagick-dev libmagickwand-dev libsqlite-dev sqlite3 libsqlite3-dev
+    $ sudo aptitude install ruby1.9.3 irb rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ libmagick-dev libmagickwand-dev libsqlite-dev sqlite3 libsqlite3-dev
 
 
 
@@ -84,3 +84,7 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 # Workspace
 - Clone projects from github and YL git server
 - Setup up a common sublime project and add all projects from the workspace directory to that project
+
+## git:
+    $ git config --global user.name "Benny"
+    $ git config --global user.email "benny@itws.de"
