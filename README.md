@@ -20,6 +20,11 @@ to
 
 
 
+# Install aptitude
+    $ sudo apt-get install aptitude
+
+
+
 # Install ubuntu packages
     $ sudo aptitude update
     $ sudo aptitude upgrade
