@@ -17,6 +17,7 @@ to
     $ sudo apt-add-repository -y ppa:webupd8team/sublime-text-2
     $ sudo apt-add-repository -y ppa:nilarimogard/webupd8
     $ sudo apt-add-repository -y ppa:webupd8team/themes
+    $ sudo apt-add-repository -y ppa:tualatrix/ppa
 
 
 
@@ -28,7 +29,7 @@ to
 # Install ubuntu packages
     $ sudo aptitude update
     $ sudo aptitude upgrade
-    $ sudo aptitude install chromium ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager
+    $ sudo aptitude install chromium ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak
 
 
 
@@ -69,10 +70,43 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 
 
 
+# Tweaks
+- Launch "Ubuntu Tweaks"
+- Get to the "Tweaks" tab
+
+
+## Miscellaneous
+- Enable "Menus have icons"
+
+
+## Theme
+- Install and change theme if you want
+
+
+## Login Settings
+- Disable "Guest account"
+- Disable "Play login sound"
+- Change the login wallpaper if you want
+
+
+## Unity
+- Disable "HUD"
+- Disable "Webapps integration"
+- Set "Disable 'Show Desktop' in the switche" to on
+- Change the "Launcher Icon Size" to 32
+- Change "Launcher icon backlight" if you want
+- Set "Panel opacity" to 0.30
+
+## Window
+- Set "Window control button position" to your prefered position
+
+
+
 # Settings
 ## General
 - Remove unneccessary stuff from the unity launcher and add the terminal, browser, etc.
 - Set a beautiful desktop wallpaper
+- Get a nice icon theme from here http://www.ubuntuka.com/ubuntu-icon-themes/ and set it via ubuntu-tweak
 - Create the Meta+Enter shortcut for gnome-shell
 - Create the Meta+Pos1 shortcut for sublime
 
@@ -90,6 +124,6 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 - Clone projects from github and YL git server
 - Setup up a common sublime project and add all projects from the workspace directory to that project
 
-## git:
+## git
     $ git config --global user.name "Benny"
     $ git config --global user.email "benny@itws.de"
