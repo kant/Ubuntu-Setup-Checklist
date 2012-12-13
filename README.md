@@ -18,6 +18,7 @@ to
     $ sudo apt-add-repository -y ppa:nilarimogard/webupd8
     $ sudo apt-add-repository -y ppa:webupd8team/themes
     $ sudo apt-add-repository -y ppa:tualatrix/ppa
+    $ sudo add-apt-repository -y ppa:dockbar-main/ppa
 
 
 
@@ -29,7 +30,7 @@ to
 # Install ubuntu packages
     $ sudo aptitude update
     $ sudo aptitude upgrade
-    $ sudo aptitude install chromium ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak
+    $ sudo aptitude install chromium ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx
 
 
 
@@ -42,6 +43,26 @@ to
     $ git clone https://github.com/itws/dotfiles.git .dotfiles
     $ cd .dotfiles
     $ rake install
+
+
+# DockbarX
+## Disable the Unity Launcher
+- Launch ccsm and click on the "Ubuntu Unity Plugin"
+- Under "Behavior", change "Hide Launcher" to "autohide"
+- Under "Experimental", change "Launcher Reveal Edge Responsivness" to 0.2.
+- Disable "Key to put keyboard-focus on launcher"
+
+
+## Config DockbarX
+- Start DockbarX Preferences
+- Set "Position" to "bottom"
+- Set "Size" to 38
+- Set "Dock theme" to "SND"
+- Switch to "Appearence"
+- Set "Theme" to "Gaia"
+- Set "Needs attention effect" to "Blinking"
+- Switch to "Window List"
+- Enable "Maximized windows should not overlap the locked list"
 
 
 
@@ -93,8 +114,6 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 - Disable "HUD"
 - Disable "Webapps integration"
 - Set "Disable 'Show Desktop' in the switche" to on
-- Change the "Launcher Icon Size" to 32
-- Change "Launcher icon backlight" if you want
 - Set "Panel opacity" to 0.30
 
 ## Window
