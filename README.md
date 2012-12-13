@@ -4,7 +4,7 @@ This is a checklist for setting up a ubuntu installation the way I like.
 
 
 # Preface
-I always choose english as system language althought I'm from germany, because there less switches between english and german (coding in english, system in german, documentation in english, and so, thats irritating).
+I always choose english as system language althought I'm from germany, because there less switches between english and german (coding in english, system in german, documentation in english, and so on, thats irritating).
 
 
 
