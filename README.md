@@ -28,7 +28,7 @@ to
 # Install ubuntu packages
     $ sudo aptitude update
     $ sudo aptitude upgrade
-    $ sudo aptitude install ruby1.9.3 irb rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ libmagick-dev libmagickwand-dev libsqlite-dev sqlite3 libsqlite3-dev
+    $ sudo aptitude install chromium ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools
 
 
 
@@ -47,7 +47,7 @@ to
 # Change shell to zsh
     $ sudo usermod -s /usr/bin/zsh benny
 
-If the unit/gnome terminal still starts a dash, go to edit > profiles > edit > title and command and click "Run a custom command instead of my shell" and change "custom command" to "/usr/bin/zsh"
+If the unity/gnome terminal still starts a dash, go to edit > profiles > edit > title" and command" and click "Run a custom command instead of my shell" and change "custom command" to "/usr/bin/zsh"
 
 - Restart the terminal after that
 
