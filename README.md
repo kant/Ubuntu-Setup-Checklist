@@ -9,7 +9,7 @@ I always choose english as system language althought I'm from germany, because t
 
 
 # Change sudoers file
-    $ sudo visudo
+    sudo visudo
 
 Change:
     Defaults    env_reset
@@ -19,36 +19,35 @@ to
 
 
 # Extend apt sources
-    $ sudo add-apt-repository -y ppa:webupd8team/java
-    $ sudo apt-add-repository -y ppa:webupd8team/sublime-text-2
-    $ sudo apt-add-repository -y ppa:nilarimogard/webupd8
-    $ sudo apt-add-repository -y ppa:webupd8team/themes
-    $ sudo apt-add-repository -y ppa:tualatrix/ppa
-    $ sudo add-apt-repository -y ppa:dockbar-main/ppa
+    sudo add-apt-repository -y ppa:webupd8team/java
+    sudo apt-add-repository -y ppa:webupd8team/sublime-text-2
+    sudo apt-add-repository -y ppa:nilarimogard/webupd8
+    sudo apt-add-repository -y ppa:webupd8team/themes
+    sudo apt-add-repository -y ppa:tualatrix/ppa
+    sudo add-apt-repository -y ppa:dockbar-main/ppa
 
 
 
 # Install aptitude
-    $ sudo apt-get install aptitude
+    sudo apt-get update && sudo apt-get install aptitude
 
 
 
 # Install ubuntu packages
-    $ sudo aptitude update
-    $ sudo aptitude upgrade
-    $ sudo aptitude install chromium conky-all ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx agave
+    sudo aptitude upgrade
+    sudo aptitude install chromium conky-all ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx agave
 
 
 
 # Install ruby gems
-    $ sudo gem install rake bundler
+    sudo gem install rake bundler
 
 
 
 # My dotfiles from github:
-    $ git clone https://github.com/itws/dotfiles.git .dotfiles
-    $ cd .dotfiles
-    $ rake install
+    git clone https://github.com/itws/dotfiles.git .dotfiles
+    cd .dotfiles
+    rake install
 
 
 # DockbarX
@@ -72,7 +71,7 @@ to
 
 
 
-# Docky
+# Conky
 - Download .conkyrc from this repo and put it in your home dir
 - launch gnome-session-properties
 - Add conky
@@ -82,7 +81,7 @@ to
 
 
 # Change shell to zsh
-    $ sudo usermod -s /usr/bin/zsh benny
+    sudo usermod -s /usr/bin/zsh benny
 
 If the unity/gnome terminal still starts a dash, go to edit > profiles > edit > title" and command" and click "Run a custom command instead of my shell" and change "custom command" to "/usr/bin/zsh"
 
@@ -101,8 +100,8 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 
 
 # Clean up home directory
-    $ rm -rf Documents Music Pictures Public Templates Videos examples.desktop
-    $ mkdir -p workspaces/yaana
+    rm -rf Documents Music Pictures Public Templates Videos examples.desktop
+    mkdir -p workspaces/yaana
 
 
 
@@ -159,5 +158,5 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 - Setup up a common sublime project and add all projects from the workspace directory to that project
 
 ## git
-    $ git config --global user.name "Benny"
-    $ git config --global user.email "benny@itws.de"
+    git config --global user.name "Benny"
+    git config --global user.email "benny@itws.de"
