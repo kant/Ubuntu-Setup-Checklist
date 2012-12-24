@@ -56,10 +56,16 @@ to
 - Under "Behavior", change "Hide Launcher" to "autohide"
 - Under "Experimental", change "Launcher Reveal Edge Responsivness" to 0.2.
 - Disable "Key to put keyboard-focus on launcher"
+- Close the compiz thingy and launch your preferences
+- Click on "Displays"
+- Disable "Sticky edges"
+- Set "Launcher Placement" to your left screen
+- "Apply"
 
 
 ## Config DockbarX
-- Start DockbarX Preferences
+- Start DockX
+- Right click on the dock, click on "Properties"
 - Set "Position" to "bottom"
 - Set "Size" to 38
 - Set "Dock theme" to "SND"
