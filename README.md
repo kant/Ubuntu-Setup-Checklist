@@ -143,7 +143,7 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 
 # Settings
 ## General
-- Remove unneccessary stuff from the unity launcher and add the terminal, browser, etc.
+- Remove unneccessary stuff from the dockbar and add the terminal, browser, etc.
 - Set a beautiful desktop wallpaper
 - Get a nice icon theme from here http://www.ubuntuka.com/ubuntu-icon-themes/ and set it via ubuntu-tweak
 - Create the Meta+Enter shortcut for gnome-shell
