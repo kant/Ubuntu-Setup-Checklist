@@ -35,7 +35,7 @@ to
 
 # Install ubuntu packages
     sudo aptitude upgrade
-    sudo aptitude install chromium-browser conky-all ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx agave oracle-java7-installer
+    sudo aptitude install chromium-browser conky-all ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx agave oracle-java7-installer gimp
 
 
 
