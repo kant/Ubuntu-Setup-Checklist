@@ -40,7 +40,7 @@ to
     sudo aptitude install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms
     
 ## Multimedia
-    sudo aptitude install vlc gstreamer0.10-fluendo-mp3
+    sudo aptitude install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer
 
 ## Internet
     sudo aptitude install chromium-browser account-plugin-tools 
