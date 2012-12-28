@@ -35,8 +35,27 @@ to
 
 # Install ubuntu packages
     sudo aptitude upgrade
-    sudo aptitude install chromium-browser conky-all ruby1.9.3 rdoc rake vim git linux-headers-generic dkms zsh zsh-lovers sublime-text-dev libxml2-dev libxslt1-dev libmysqlclient-dev mysql-client mysql-server build-essential g++ graphicsmagick-libmagick-dev-compat sqlite3 libsqlite0-dev account-plugin-tools compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx agave oracle-java7-installer gimp
 
+## Libs, compiler, header, Java7 etc.
+    sudo aptitude install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms
+    
+## Multimedia
+    sudo aptitude install vlc gstreamer0.10-fluendo-mp3
+
+## Internet
+    sudo aptitude install chromium-browser account-plugin-tools 
+    
+## Desktop
+    sudo aptitude install conky-all compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx
+
+## Shell
+    sudo aptitude install zsh zsh-lovers
+
+## Development
+    sudo aptitude install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox
+    
+## Ruby
+    sudo aptitude install ruby1.9.3 rdoc rake
 
 
 # Install ruby gems
