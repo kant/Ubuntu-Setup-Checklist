@@ -37,7 +37,7 @@ to
     sudo aptitude upgrade
 
 ## Libs, compiler, header, Java7 etc.
-    sudo aptitude install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms
+    sudo aptitude install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms libsqlite3-dev libv8-dev
     
 ## Multimedia
     sudo aptitude install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer
