@@ -49,7 +49,7 @@ to
     sudo aptitude install conky-all compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx
 
 ## Shell
-    sudo aptitude install zsh zsh-lovers
+    sudo aptitude install zsh zsh-lovers htop
 
 ## Development
     sudo aptitude install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox
