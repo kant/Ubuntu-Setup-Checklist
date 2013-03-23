@@ -1,6 +1,10 @@
-This is a checklist for setting up a ubuntu installation the way I like.
+This is a checklist for setting up a Ubuntu or Linux Mint installation the way I like.
 
-![Screenshot](https://raw.github.com/phortx/Ubuntu-Setup-Checklist/master/screenshot.png)
+
+
+# TODO
+- nginx config
+- RVM
 
 
 # Preface
@@ -28,72 +32,87 @@ to
 
 
 
-# Install aptitude
+# Install aptitude (not under Mint)
     sudo apt-get update && sudo apt-get install aptitude
 
 
 
-# Install ubuntu packages
+# Install ubuntu packages (Pick out the groups you need)
     sudo aptitude upgrade
+    alias install='sudo aptitiude install'
 
 ## Libs, compiler, header, Java7 etc.
-    sudo aptitude install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms libsqlite3-dev libv8-dev nodejs
+    install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms libsqlite3-dev libv8-dev nodejs curl libreadline6-dev libssl-dev libyaml-dev libgdbm-dev ncurses-dev libffi-dev
     
-## Multimedia
-    sudo aptitude install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer
+## Multimedia (Not for Mint with codecs)
+    install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer
 
 ## Internet
-    sudo aptitude install chromium-browser account-plugin-tools 
+    install chromium-browser account-plugin-tools 
     
 ## Desktop
-    sudo aptitude install conky-all compizconfig-settings-manager ubuntu-tweak dockbarx-themes-extra dockbarx
+### For Ubuntu with Unity:
+    install conky-all compizconfig-settings-manager ubuntu-tweak
+
+### For Mint with Cinnamon
+    install conky-all
+    
+### For OSX look of Mint and Cinnamon
+    install docky gnome-cupertino-gtk-theme
 
 ## Shell
-    sudo aptitude install zsh zsh-lovers htop
+    install zsh zsh-lovers htop
 
-## Development
-    sudo aptitude install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox
-    
-## Ruby
-    sudo aptitude install ruby1.9.3 rdoc rake
+## Quicksynergy
+    install quicksynergy
+
+## General development stuff
+    install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox nginx
+
+## Java
+    install tomcat7 maven2 eclipse
 
 
-# Install ruby gems
-    sudo gem install rake bundler
+# Install ruby
+    \curl -L https://get.rvm.io | bash -s stable --ruby
+    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' > ~/.localrc.zsh
+    source ~/.localrc.zsh
+
+If rvm fails, run <code>rvm requirements run</code> and <code>rvm reinstall ruby</code>
+
+    gem install rake bundler
 
 
 
 # My dotfiles from github:
-    git clone https://github.com/itws/dotfiles.git .dotfiles
+    git clone https://github.com/phortx/dotfiles.git .dotfiles
     cd .dotfiles
     rake install
 
 
-# DockbarX
-## Disable the Unity Launcher
-- Launch ccsm and click on the "Ubuntu Unity Plugin"
-- Under "Behavior", change "Hide Launcher" to "autohide"
-- Under "Experimental", change "Launcher Reveal Edge Responsivness" to 0.2.
-- Disable "Key to put keyboard-focus on launcher"
-- Close the compiz thingy and launch your preferences
-- Click on "Displays"
-- Disable "Sticky edges"
-- Set "Launcher Placement" to your left screen
-- "Apply"
+# OSX Look for Mint with Cinnamon
+## Themes
+- Move the cinnamon panel to the top (right click, pannel settings, set panel layout to "Flipped", log out and in)
+- Start a shell, <code>mkdir ~/.themes && cd ~/.themes</code>
+- <code>wget http://cinnamon-spices.linuxmint.com/uploads/themes/LCII-9YGO-SMGX.zip</code>
+- <code>unzip LCII-9YGO-SMGX.zip</code>
+- <code>rm LCII-9YGO-SMGX.zip</code>
+- Right click on the panel, settings, themes, choose "OSX - Cinnamon"
+- Under "Other settings" change window and gtk+ theme to gnome-cupertino
 
-
-## Config DockbarX
-- Start DockX
-- Right click on the dock, click on "Properties"
-- Set "Position" to "bottom"
-- Set "Size" to 38
-- Set "Dock theme" to "SND"
-- Switch to "Appearence"
-- Set "Theme" to "Gaia"
-- Set "Needs attention effect" to "Blinking"
-- Switch to "Window List"
-- Enable "Maximized windows should not overlap the locked list"
-
+##  Docky
+- Start docky, rightclick on the first icon, settings
+- Theme: HUD
+- Close Settings
+- Drag the dock to the right
+- Open Settings again
+- Hide: Intellihide, enable "Fade on height"
+- Icon size: 38
+- Disable Zoom
+- Under "Docklets" add Mounter
+- Right click on the cinnamon panel, activate the panel edit mode and remove the window bar, the launcher icons and the desktop icon via right click
+- Add and remove widgets as you like and disable panel edit mode again
+- Right click on cinnamon menu, menu settings, remove menu text, close
 
 
 # Conky
@@ -127,10 +146,11 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 # Clean up home directory
     rm -rf Documents Music Pictures Public Templates Videos examples.desktop
     mkdir -p workspaces/yaana
+    mkdir -p workspaces/htdocs
 
 
 
-# Tweaks
+# Tweaks (Just under Ubuntu with unity)
 - Launch "Ubuntu Tweaks"
 - Get to the "Tweaks" tab
 
@@ -162,7 +182,6 @@ Monaco is a pretty monospace font, which I really like. It's a native OSX font.
 
 # Settings
 ## General
-- Remove unneccessary stuff from the dockbar and add the terminal, browser, etc.
 - Set a beautiful desktop wallpaper
 - Get a nice icon theme from here http://www.ubuntuka.com/ubuntu-icon-themes/ and set it via ubuntu-tweak
 - Create the Meta+Enter shortcut for gnome-shell
