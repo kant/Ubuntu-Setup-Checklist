@@ -4,7 +4,6 @@ This is a checklist for setting up a Ubuntu or Linux Mint installation the way I
 
 # TODO
 - nginx config
-- RVM
 
 
 # Preface
