@@ -73,6 +73,9 @@ to
     sudo /etc/init.d/tomcat7 stop
     sudo update-rc.d -f tomcat7 remove
 
+# If you're behind a proxy
+    install corkscrew
+
 
 # Install ruby
     \curl -L https://get.rvm.io | bash -s stable --ruby
