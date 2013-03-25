@@ -70,6 +70,7 @@ to
 
 ## Java
     install tomcat7 maven2 eclipse
+    sudo /etc/init.d/tomcat7 stop
     sudo update-rc.d -f tomcat7 remove
 
 
