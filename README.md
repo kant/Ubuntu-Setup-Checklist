@@ -70,6 +70,7 @@ to
 
 ## Java
     install tomcat7 maven2 eclipse
+    sudo update-rc.d -f tomcat7 remove
 
 
 # Install ruby
