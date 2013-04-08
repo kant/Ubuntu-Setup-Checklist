@@ -65,8 +65,11 @@ to
 ## Quicksynergy
     install quicksynergy
 
+## Photography
+    install darktable
+
 ## General development stuff
-    install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox nginx
+    install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox nginx shutter
 
 ## Java
     install tomcat7 maven2 eclipse
