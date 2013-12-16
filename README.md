@@ -66,7 +66,7 @@ to
     install quicksynergy
 
 ## Photography
-    install darktable
+    install darktable rawtherapee gimp
 
 ## General development stuff
     install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox nginx shutter
