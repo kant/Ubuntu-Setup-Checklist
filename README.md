@@ -38,20 +38,20 @@ to
 
 # Install ubuntu packages (Pick out the groups you need)
     sudo aptitude upgrade
-    alias install='sudo aptitiude install'
+    alias install='sudo aptitude install'
 
-## Libs, compiler, header, Java7 etc.
-    install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms libsqlite3-dev libv8-dev nodejs curl libreadline6-dev libssl-dev libyaml-dev libgdbm-dev ncurses-dev libffi-dev
+## Libs, compiler, header, tools, Java7 etc.
+    install libxml2-dev libxslt1-dev libmysqlclient-dev build-essential g++ linux-headers-generic graphicsmagick-libmagick-dev-compat libsqlite0-dev oracle-java7-installer dkms libsqlite3-dev libv8-dev nodejs curl libreadline6-dev libssl-dev libyaml-dev libgdbm-dev ncurses-dev libffi-dev sysstat etherwake openvpn gir1.2-gtop-2.0 gconf-editor landscape-client landscape
     
 ## Multimedia (Not for Mint with codecs)
-    install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer
+    install vlc gstreamer0.10-fluendo-mp3 flashplugin-installer lame k3b
 
 ## Internet
     install chromium-browser account-plugin-tools 
     
 ## Desktop
 ### For Ubuntu with Unity:
-    install conky-all compizconfig-settings-manager ubuntu-tweak
+    install conky-all compizconfig-settings-manager ubuntu-tweak docky
 
 ### For Mint with Cinnamon
     install conky-all
@@ -69,10 +69,10 @@ to
     install darktable rawtherapee gimp
 
 ## General development stuff
-    install vim git sublime-text-dev mysql-client mysql-server sqlite3 agave gimp virtualbox nginx shutter
+    install vim git sublime-text-installer mysql-client mysql-server sqlite3 agave gimp virtualbox nginx shutter npm
 
 ## Java
-    install tomcat7 maven2 eclipse
+    install tomcat7 maven eclipse
     sudo /etc/init.d/tomcat7 stop
     sudo update-rc.d -f tomcat7 remove
 
@@ -82,7 +82,7 @@ to
 
 # Install ruby
     \curl -L https://get.rvm.io | bash -s stable --ruby
-    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' > ~/.localrc.zsh
+    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && echo "$HOME/.rvm/scripts/rvm"' >> ~/.localrc.zsh
     source ~/.localrc.zsh
 
 If rvm fails, run <code>rvm requirements run</code> and <code>rvm reinstall ruby</code>
