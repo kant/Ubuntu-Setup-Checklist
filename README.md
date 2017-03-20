@@ -3,7 +3,7 @@ This is a checklist for setting up a Ubuntu or Linux Mint installation the way I
 
 # Preface
 
-I always choose english as system language althought I'm from germany, due the fact that there will be less switches between english and german (coding in english, system in german, documentation in english, GUI in german, and so on, thats just irritating).
+I always choose english as system language althought I'm from Germany, due the fact that there will be less switches between english and german (coding in english, system in german, documentation in english, GUI in german, and so on, thats just irritating).
 
 My preferred desktop environment is KDE 5.
 
